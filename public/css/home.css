@@ -7,6 +7,7 @@
 
 body{
     margin: 0;
+    padding: 0;
 }
 
 /* header */
@@ -32,6 +33,10 @@ header{
 .encabezado .buscador{
     margin: 15px;
     margin-bottom: 0;
+}
+
+.encabezado .menus{
+    display: none;
 }
 
 .encabezado .menus a{
@@ -64,40 +69,145 @@ main{
     background-color: var(--color-grisClaro);
 }
 
+.sin-borde{
+    margin: 0;
+    padding: 0;
+}
+
+.sin-borde img{
+    display: block;
+    width: 100%;
+}
+
 main section{
-    margin: 10px;
-    margin-top: 0;
+    padding: 10px;
 }
 
 main .titulares{
     font-size: 24px;
+    color: var(--color-grisOscuro);
+}
+
+main img.photo{
+    display: block;
+    width: 100%;
+}
+
+.articulos{
+    margin-bottom: 10px;
+}
+
+.articulos h4{
+    margin: 5px 0;
+}
+
+.articulos span.truck-border{
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid var(--color-verde);
+    padding: 10px;
+}
+
+.caja{
+    background-color: #fff;
+    padding: 15px;
+    border-top: 1px solid var(--color-grisClaro);
 }
 
 main .precio{
     font-size: 18px;
+    color: var(--color-grisOscuro)
 }
 
 main .descuentos{
     font-size: 16px;
+    color: var(--color-verde);
 }
 
 main .descripcion{
+    color: var(--color-grisOscuro);
     font-size: 16px;
+    display: none;
 }
 
 /* footer */
 
 footer{
-    text-align: center;
-    margin: 30px;
-    margin-bottom: 5px;
+    background-color: white;
+    padding-top: 30px;
 }
 
-footer h3{
-    font-size: 16px;
+.foot{
+    text-align: center;
+    padding: 30px;
+    margin: 0;
 }
 
 footer i{
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+.foot h3{
+    font-size: 16px;
+    margin-bottom: 0;
+    color: var(--color-grisOscuro);
+}
+
+.foot p{
+    color: var(--color-grisOscuro);
+}
+
+
+@media (min-width: 361px) {
+    
+    /* header */
+
+    .encabezado .menus{
+        display: block;
+        padding-bottom: 10px;
+        margin:0;
+    }
+
+    .encabezado .burger-menu{
+        display: none;
+    }
+
+    main .descripcion{
+        color: var(--color-grisOscuro);
+        font-size: 16px;
+        display: block;
+    }
+
+    .articulos{
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
+
+@media (min-width: 769) {
+
+    /* header */
+
+    .encabezado .menus{
+        display: block;
+    }
+
+    .encabezado .burger-menu{
+        display: none;
+    }
+
+    main .descripcion{
+        color: var(--color-grisOscuro);
+        font-size: 16px;
+        display: block;
+    }
+
+    .articulos{
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    
 }
