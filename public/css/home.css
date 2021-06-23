@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-size: 12px;
+}
+
+body{
+    margin: 0;
+}
+
+/* header */
+
+header{
+    background-color: var(--color-amarillo);
+}
+.encabezado img{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.encabezado p{
+    text-align: center;
+}
+
+.encabezado ul{
+    list-style: none;
+    color: blanchedalmond;
+}
+
+.encabezado .buscador{
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+.encabezado .menus a{
+    color: black;
+}
+
+.encabezado div{
+    margin:0;
+    padding: 0;
+}
+
+.encabezado .burger-menu{
+    text-align: center;
+}
+
+.encabezado .burger-menu button{
+    display: inline-block;
+    margin: 20px auto;
+    background-color: var(--color-celeste);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* main */
+
+main{
+    background-color: var(--color-grisClaro);
+}
+
+main section{
+    margin: 10px;
+    margin-top: 0;
+}
+
+main .titulares{
+    font-size: 24px;
+}
+
+main .precio{
+    font-size: 18px;
+}
+
+main .descuentos{
+    font-size: 16px;
+}
+
+main .descripcion{
+    font-size: 16px;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 5px;
+}
+
+footer h3{
+    font-size: 16px;
+}
+
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
