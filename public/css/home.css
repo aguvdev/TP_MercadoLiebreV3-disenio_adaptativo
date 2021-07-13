@@ -1,5 +1,7 @@
 *{
+    box-sizing: border-box;
     padding: 0;
+    margin: 0%;
     font-family: 'Roboto';
     text-decoration: none;
     font-size: 12px;
@@ -7,8 +9,6 @@
 
 body{
     background-color: var(--color-grisClaro);
-    margin: 0;
-    padding: 0;
 }
 
 /* header */
@@ -65,6 +65,11 @@ header{
 
 
 /* main */
+main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw
+}
 
 .sin-borde{
     margin: 0;
@@ -73,7 +78,7 @@ header{
 
 .sin-borde img{
     display: block;
-    width: 100vw;
+    width: 100%;
 }
 .ultima-visita{
     display: flex;
@@ -83,7 +88,7 @@ header{
 }
 .ultima-visita h2{
     align-self: flex-start;
-    margin-left: 5%;
+    margin: 5%;
 }
 .seccion-ofertas{
     display: flex;
